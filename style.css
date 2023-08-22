@@ -7,6 +7,7 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -24,24 +25,39 @@ h1 {
 }
 
 .container-search {
+    position: relative;
     display: flex;
     flex-direction: row;
 }
 
-#search {
+.search {
+    width: 58px;
+    height: 44px;
     border: 1px solid #BB2525;
-    padding: 0px 12px;
     font-size: 18px;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
+    transition: all 0.4s ease;
 }
 
-#search:focus {
+.search:focus {
     border: 2px solid #BB2525;
     outline: none;
 }
 
+.active {
+    padding: 0px 12px;
+    width: 200px;
+    transform: translateX(-12%);
+}
+
+.search.active+.btn-search {
+    transform: translateX(275%);
+}
+
+
 .btn-search {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
