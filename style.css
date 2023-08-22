@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
 
-h1{
+h1 {
     color: #141E46;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,19 +23,36 @@ h1{
     background-color: #FFF5E0;
 }
 
-.btn-search{
+.container-search {
+    display: flex;
+    flex-direction: row;
+}
+
+#search {
+    border: 1px solid #BB2525;
+    padding: 0px 12px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+#search:focus {
+    border: 2px solid #BB2525;
+    outline: none;
+}
+
+.btn-search {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #BB2525;
     color: #fafafa;
-    border: 0;
-    border-radius: 2px;
     padding: 10px 20px;
+    border: none;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
 .btn-search:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
